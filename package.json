@@ -1,0 +1,20 @@
+{
+  "name": "on-polymer-and-smileys",
+  "version": "1.0.0",
+  "description": "Presentation slides of my talk on Polymer and smileys",
+  "scripts": {
+    "server": "live-server --port=8013"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmenPopoviciu/on-polymer-and-smileys.git"
+  },
+  "author": "Carmen Popoviciu <carmen.popoviciu@gmail.com>",
+  "homepage": "https://github.com/CarmenPopoviciu/on-polymer-and-smileys#readme",
+  "dependencies": {
+    "live-server": "^0.9.2"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  }
+}
