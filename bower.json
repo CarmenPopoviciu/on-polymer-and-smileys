@@ -20,10 +20,13 @@
     "ascii-confused": "git@github.com:CarmenPopoviciu/ascii-confused.git",
     "ascii-eyebrow": "git@github.com:CarmenPopoviciu/ascii-eyebrow.git",
     "ascii-carmen-smile": "git@github.com:CarmenPopoviciu/ascii-carmen-smile.git",
-    "super-presentation": "git@github.com:CarmenPopoviciu/super-presentation.git"
+    "super-presentation": "git@github.com:CarmenPopoviciu/super-presentation.git",
+    "akyral-code": "~2.0.2",
+    "highlightjs": "~9.1.0"
   },
   "devDependencies": {},
   "resolutions": {
-    "polymer": "^1.3.0"
+    "polymer": "^1.3.0",
+    "highlightjs": "~9.1.0"
   }
 }
