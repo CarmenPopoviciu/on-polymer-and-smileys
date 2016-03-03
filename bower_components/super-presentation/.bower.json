@@ -1,0 +1,38 @@
+{
+  "name": "super-presentation",
+  "authors": [
+    "Guilherme Rv Coelho <guilhermervcoelho@gmail.com>"
+  ],
+  "description": "A polymer slide presentation element",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "slide",
+    "presentation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "homepage": "https://github.com/CarmenPopoviciu/super-presentation",
+  "_release": "3077686e03",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3077686e03becb44afb6159e3a2e04560912681d"
+  },
+  "_source": "git@github.com:CarmenPopoviciu/super-presentation.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:CarmenPopoviciu/super-presentation.git"
+}

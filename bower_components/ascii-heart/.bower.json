@@ -1,0 +1,40 @@
+{
+  "name": "ascii-heart",
+  "authors": [
+    "Carmen Popoviciu <carmen.popoviciu@gmail.com>"
+  ],
+  "description": "A tiny heart for the big web. Animated ascii heart Polymer element.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "ascii",
+    "ascii heart",
+    "smileys"
+  ],
+  "main": "ascii-heart.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/CarmenPopoviciu/ascii-heart/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "prefixfree": "*"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "5890040a91",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5890040a91c6b45ded099373d11a0a77c14aebe7"
+  },
+  "_source": "git@github.com:CarmenPopoviciu/ascii-heart.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:CarmenPopoviciu/ascii-heart.git"
+}

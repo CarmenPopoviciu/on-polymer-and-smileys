@@ -1,0 +1,1192 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="import" href="../bower_components/ascii-heart/ascii-heart.html">
+    <link rel="import" href="../bower_components/ascii-smile/ascii-smile.html">
+    <link rel="import" href="../bower_components/ascii-carmen-smile/ascii-carmen-smile.html">
+    <link rel="import" href="../bower_components/ascii-hug/ascii-hug.html">
+    <link rel="import" href="../bower_components/ascii-hello/ascii-hello.html">
+    <link rel="import" href="../bower_components/ascii-shrug/ascii-shrug.html">
+    <link rel="import" href="../bower_components/ascii-eyebrow/ascii-eyebrow.html">
+    <link rel="import" href="../bower_components/ascii-confused/ascii-confused.html">
+    <link rel="import" href="../bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="../bower_components/super-presentation/super-presentation.html">
+    <link rel="import" href="../bower_components/super-presentation/super-slide.html">
+    <link rel="import" href="../bower_components/akyral-code/akyral-code.html">
+    
+    <link rel="stylesheet" href="../bower_components/highlightjs/styles/zenburn.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style is="custom-style">
+    
+    </style>
+  </head>
+  
+  <body>
+    <super-presentation>
+      <!-- INTRO ---------------------------------------------------------------->
+      <super-slide class="intro chapter">
+        <h1>On Polymer and Smileys</h1>
+        <img class="polymer-logo" src="images/polymer.png">
+        <h5>... or Polysmileys ...</h5>
+        <h5> ≧^◡^≦ </h5>
+      </super-slide>
+      
+      <super-slide>
+        <ascii-hello></ascii-hello>
+      </super-slide>
+      
+      <super-slide>
+        <img class="avatar" src="//lh3.googleusercontent.com/-1FWzIgiUBvg/AAAAAAAAAAI/AAAAAAAAIPU/LW51OvRdtM8/s120-c/photo.jpg">
+        <p style="font-size: 27px; font-weight: bold;">@CarmenPopoviciu</p>
+      </super-slide>
+        
+      <super-slide>
+        <h2 class="smile-font">=^.^=</h2>
+        <div class="about-me">
+          <h6>
+            <span fragment>I &lt;3 trampolines</span>
+            <span fragment>I'm happy around cakes</span>
+          </h6>
+          <img class="me-pic" src="images/trampoline.gif">
+          <img class="me-pic" src="images/me.jpg">
+        </div>
+      </super-slide>
+      
+      <super-slide>
+        <h2 class="smile-font">=^.^=</h2>
+        <div class="love-love">
+          <span>I</span>
+          <ascii-heart></ascii-heart>
+          <ascii-heart></ascii-heart>
+          <ascii-heart></ascii-heart>
+          <ascii-heart></ascii-heart>
+          <ascii-heart></ascii-heart>
+          <ascii-heart></ascii-heart>
+          <span>ASCII smileys</span>
+        </div>
+      </super-slide>
+      
+      <super-slide>
+        <h3>fav ascii smiley</h3>
+        <h1 class="fav-smiley">^_^</h1>
+      </super-slide>
+      
+      <super-slide>
+        <h3>fav ascii smiley++</h3>
+        <ascii-smile style="font-size: 2em; line-height: 1px;"></ascii-smile>
+      </super-slide>
+      
+      <super-slide>
+        <h1>About this talk</h1>
+      </super-slide>
+      
+      <super-slide>
+        <img src="images/screenshot.png">
+      </super-slide>
+      
+      <super-slide>
+        <h3 class="content">ASCII smileys make the Web a better place</h3>
+      </super-slide>
+      
+      <super-slide>
+        <h3 class="content" style="color: #EA1CA9;">Pink is not the coolest color ever, 
+          but sometimes it can be fun</h3>
+      </super-slide>
+      
+      <super-slide>
+        <h4 class="content">Random pictures that you take from the airplane can sometimes
+          turn out to be useful</h4>
+        <div style="margin-top: 40px; font-size: 1.5em;">
+          <strong>#unfiltered #friendsforever #unicorns #rainbows #allthatstuff </strong>
+        </div>  
+      </super-slide>
+      
+      <super-slide>
+        <h4>The true heroes of this talk are:</h4>
+        <p style="margin-bottom: 0px;">
+          <strong>(>‿◠)✌  Guilherme Rv Coelho</strong>
+          <a href="https://github.com/wet-floor/super-presentation" target="_blank">&lt;super-presentation&gt;</a>
+        </p>
+        <p>
+          <strong>☜(ˆ▽ˆ) Filipe Araujo</strong>
+          <a href="https://github.com/filaraujo/akyral-code" target="_blank">&lt;akyral-code&gt;</a>
+        </p>
+      </super-slide>
+      
+      <super-slide>
+        <h2><strong>ONE LAST WARNING!</strong></h2>
+        <h4 fragment>This talk contains an overdose of smileys</h4>
+      </super-slide>
+      
+      <super-slide>
+        <div class="smile-font">^.^=     ≥^.^≤    ≤^.^≥    (>‿◠)✌    ≧✯◡✯≦✌
+        ≧◠◡◠≦✌    ≧'◡'≦ =☽      ≧◔◡◔≦     ≧◉◡◉≦      ≧✯◡✯≦    
+        ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)      ᵔ.ᵔ    :◅)     
+        ≕)    ≔)    ≠)     |:-)     =)     :)    :-)     ;)     ;=)    
+        ;-)    ж) ^o^    ^.^     ^.^)     =^.^=     :*)     :->     
+        (¬‿¬)     ٩(●̮̮̃•)۶     ٩(̃-̮̮̃-)۶     (-̮̮̃•)۶     ٩(×̯×)۶     ٩(•̮̮̃-̃)۶     
+        <(^,^)>    (≧◡≦)    乂⍲‿⍲乂     〷◠‿◠〷      '☋'  :=◑     ☋     
+        Σ=)     Ж-þ     ^^. （‐＾▽＾‐） =D   ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)    
+        ☜(*▽*)☞     ☜(˚▽˚)☞     ZB-D     \ ˚▽˚ /     2к-Ͻ     2к-3 |﻿        
+        (• ◡•)|  (>‿♥)    ✿◕ ‿ ◕✿      ❀◕ ‿ ◕❀      ❁◕ ‿ ◕❁      %ᵕ‿‿ᵕ%      
+        (◡‿◡✿)      (✿◠‿◠)       ≧❀‿❀≦ ^.^=     ≥^.^≤    ≤^.^≥    (>‿◠)✌    ≧✯◡✯≦✌
+        ≧◠◡◠≦✌    ≧'◡'≦ =☽      ≧◔◡◔≦     ≧◉◡◉≦      ≧✯◡✯≦  ✿◕ ‿ ◕✿      ❀◕ ‿ ◕❀          
+        ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)      ᵔ.ᵔ    :◅)   
+        ≕)    ≔)    ≠)     |:-)     =)     :)    :-)     ;)     ;=)    
+        ;-)    ж) ^o^    ^.^     ^.^)     =^.^=     :*)     :->     
+        (¬‿¬)     ٩(●̮̮̃•)۶     ٩(̃-̮̮̃-)۶     (-̮̮̃•)۶     ٩(×̯×)۶     ٩(•̮̮̃-̃)۶     
+        <(^,^)>    (≧◡≦)    乂⍲‿⍲乂     〷◠‿◠〷      '☋'  :=◑     ☋     
+        Σ=)     Ж-þ     ^^. （‐＾▽＾‐） =D   ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)    
+        ☜(*▽*)☞     ☜(˚▽˚)☞     ZB-D     \ ˚▽˚ /     2к-Ͻ     2к-3 |﻿        
+        (• ◡•)|  (>‿♥)    ✿◕ ‿ ◕✿      ❀◕ ‿ ◕❀      ❁◕ ‿ ◕❁      %ᵕ‿‿ᵕ%      
+        (◡‿◡✿)      (✿◠‿◠)       ≧❀‿❀≦ ^.^=     ≥^.^≤    ≤^.^≥    (>‿◠)✌    ≧✯◡✯≦✌
+        ≧◠◡◠≦✌    ≧'◡'≦ =☽      ≧◔◡◔≦     ≧◉◡◉≦      ≧✯◡✯≦    
+        ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)      ᵔ.ᵔ    :◅)     
+        ≕)    ≔)    ≠)     |:-)     =)     :)    :-)     ;)     ;=)    
+        ;-)    ж) ^o^    ^.^     ^.^)     =^.^=     :*)     :->     
+        (¬‿¬)     ٩(●̮̮̃•)۶     ٩(̃-̮̮̃-)۶     (-̮̮̃•)۶     ٩(×̯×)۶     ٩(•̮̮̃-̃)۶     
+        <(^,^)>    (≧◡≦)    乂⍲‿⍲乂     〷◠‿◠〷      '☋'  :=◑     ☋     
+        Σ=)     Ж-þ     ^^. （‐＾▽＾‐） =D   ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)     
+        ☜(*▽*)☞     ☜(˚▽˚)☞     ZB-D     \ ˚▽˚ /     2к-Ͻ     2к-3 |﻿        
+        (• ◡•)|  (>‿♥)    ✿◕ ‿ ◕✿      ❀◕ ‿ ◕❀      ❁◕ ‿ ◕❁      %ᵕ‿‿ᵕ%      
+        (◡‿◡✿)      (✿◠‿◠)       ≧❀‿❀≦  ≧❂◡❂≦     ≧^◡^≦ ≧°◡°≦     ≧◡≦     (─‿‿─)</div>
+      </super-slide>
+      
+      <super-slide>
+        <ascii-shrug></ascii-shrug>
+      </super-slide>
+      
+      <!-- LET ME TELL YOU A STORY ---------------------------------------------->
+      <!--<super-slide class="story chapter">
+        <h1>Let me tell you a story</h1>
+      </super-slide>-->
+      
+      <!-- WEB COMPONENTS ------------------------------------------------------->
+      <super-slide class="web-components chapter">
+        <h1>Web Components</h1>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components</h2>
+        <div class="content">
+          <p>are a set of standards that allow for the creation 
+              of reusable widgets or components in web documents and web applications</p>
+        </div>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Standards</h2>
+        <ul>
+          <li><span>ッ</span>Custom Elements</li>
+          <li><span>ッ</span>Templates</li>
+          <li><span>ッ</span>Shadow DOM</li>
+          <li><span>ッ</span>HTML Imports</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Standards</h2>
+        <ul>
+          <li class="active"><span>シ</span>Custom Elements</li>
+          <li><span>ッ</span>Templates</li>
+          <li><span>ッ</span>Shadow DOM</li>
+          <li><span>ッ</span>HTML Imports</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Custom Elements</h2>
+        <p class="content">Allow you to extend the HTML vocabulary and define your own, new, fully-featured DOM 
+          elements</p>
+      </super-slide>
+      
+      <super-slide>
+        <h4>&lt;ascii-smile&gt;&lt;/ascii-smile&gt;</h4>
+        <ascii-smile style="font-size: 2em;"></ascii-smile>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Custom Elements give you</h3>
+        <p style="margin-bottom: 10px;">
+          <strong fragment>declarative,</strong>
+          <strong fragment> readable,</strong>
+          <strong fragment> meaningful,</strong>
+          <strong fragment> reusable,</strong>
+          <strong fragment> self sustainable</strong> 
+          <p fragment style="margin-top: 0;">HTML Elements</p>
+        </p>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Custom Element Registration</h3>
+        <p fragment>Is the process of adding an element definition to a registry</p>
+        <code fragment is="akyral-code">
+document.registerElement('ascii-smile', // the type
+  { 
+    // the prototype. HTMLElement/SVGElement by default
+    prototype: Object.create(HTMLElement.prototype)
+  }
+); // returns a constructor function
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+&lt;ascii-smile&gt;&lt;/ascii-smile&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Type Extension Custom Elements</h3>
+        <p fragment>are Custom Elements that extend other existing elements</p>
+        <code fragment is="akyral-code">
+var AsciiSmileProto = Object.create(HTMLElement.prototype);
+
+...
+
+document.registerElement('ascii-carmen-smile',
+  { 
+    prototype: AsciiSmileProto,
+    extends: 'ascii-smile'
+  }
+);
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+&lt;ascii-smile is="ascii-smile-carmen"&gt;&lt;/ascii-smile&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Lifecycle Callbacks</h3>
+        <ul class="small" style="width: 950px;">
+          <li>
+            <span>ッ</span>
+            <strong>createdCallback</strong> 
+            <span style="font-size: 0.7em">(instance was created and its definition was registered)</span>
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>attachedCallback</strong> 
+            <span style="font-size: 0.7em">(element was inserted into the document)</span>
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>detachedCallback</strong> 
+            <span style="font-size: 0.7em">(element was removed from the document)</span>
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>attributeChangedCallback</strong> 
+            <span style="font-size: 0.7em">(element's attribute was added/changed/removed)</span>
+          </li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Standards</h2>
+        <ul>
+          <li><span>ッ</span>Custom Elements</li>
+          <li class="active"><span>シ</span>Templates</li>
+          <li><span>ッ</span>Shadow DOM</li>
+          <li><span>ッ</span>HTML Imports</li>
+        </ul>
+      </super-slide>
+        
+      <super-slide>
+        <h2>Templates</h2>
+        <p class="content">Enable you to store HTML data inside an HTML document. The content of a 
+          &lt;template&gt; element is parsed without interpreting it (no loading of images etc.)</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2> ❂.❂  Remember!   ❂.❂</h2>
+        <ul>
+          <li><span>ッ</span>Parsed as HTML</li>
+          <li><span>ッ</span>Not rendered</li>
+          <li><span>ッ</span>Can be cloned</li>
+          <li><span>ッ</span>Instantiated at runtime</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h4 class="no-margin">Declaring a Template</h4>
+        <code fragment is="akyral-code">
+&lt;template id="template"&gt;
+  &lt;style&gt;...&lt;/style&gt;
+  &lt;div&gt;
+    &lt;h1&gt;ASCII Heart&lt;/h1&gt;
+    &lt;div&gt;&lt;3&lt;/div&gt;
+    &lt;img src="http://ascii-paradise/heart.jpg"&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+        </code>
+        
+        <h4 fragment class="no-margin">Enabling a Template</h4>
+        <code fragment is="akyral-code">
+&lt;script&gt;
+  var template = document.querySelector('#template');
+  var clone = document.importNode(template.content, true);
+  var host = document.querySelector('#host');
+  host.appendChild(clone);
+&lt;/script&gt;
+
+&lt;div id="host"&gt;&lt;/div&gt;
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Standards</h2>
+        <ul>
+          <li><span>ッ</span>Custom Elements</li>
+          <li><span>ッ</span>Templates</li>
+          <li class="active"><span>シ</span>Shadow DOM</li>
+          <li><span>ッ</span>HTML Imports</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Shadow DOM</h2>
+        <p class="content">Shadow DOM encapsulates and hides the innards of a custom element inside a nested 
+            document.</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Shadow DOM Concepts</h2>
+        <ul fragment>
+          <li>
+            <span>ッ</span>
+            <strong>Document tree</strong> - a node tree whose root node is a document
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>Shadow host</strong> - element that hosts one shadow tree
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>Shadow tree</strong> - a node tree hosted by a shadow host
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>Shadow root</strong> - the root node of a shadow tree
+          </li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <img src="images/shadow-tree.svg">
+      </super-slide>
+      
+      <super-slide>
+        <img src="images/shadow-render.svg">
+      </super-slide>
+      
+      <super-slide class="star-rain">
+        <p>let me show you something</p> 
+        <p> 
+          <a href="http://html5-demos.appspot.com/shadowdom-visualizer" 
+             target="_blank">¸.•*¨*•♫♪ⒸⓄⓄⓁ•*¨*•.¸ & ¸.•*¨*•♫♪ⒶⓌⒺⓈⓄⓂⒺ•*¨*•.¸</a>
+        </p>
+        </p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Standards</h2>
+        <ul>
+          <li><span>ッ</span>Custom Elements</li>
+          <li><span>ッ</span>Templates</li>
+          <li><span>ッ</span>Shadow DOM</li>
+          <li class="active"><span>シ</span>HTML Imports</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>HTML Imports</h2>
+        <p class="content">is a way to include HTML documents in other HTML documents in a simple and 
+            declarative way
+          </p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Declaring HTML Imports</h2>
+        <code fragment is="akyral-code">
+&lt;html&gt; &lt;!-- import referrer--&gt;
+  &lt;head&gt;   
+    &lt;!-- URL = import location --&gt;
+    &lt;!-- ascii-paradise.html = imported document --&gt;       
+    &lt;link rel="import" href="path/to/ascii-paradise.html"&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>link.import</h2>
+        <p>Including an import on a page returns a Document not its content</p>
+        
+        <code is="akyral-code">
+var content = document.querySelector('link[rel="import"]').import;
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Let's give some ❤ to the Web</h3>
+        <h4 fragment>&lt;ascii-heart&gt;&lt;/ascii-heart&gt;</h4>
+      </super-slide>
+      
+      <super-slide>
+        <code is="akyral-code">
+&lt;template id="heart-template"&gt;
+  &lt;style&gt;
+    ...
+  &lt;/style&gt;
+
+  &lt;div id="ascii-heart"&gt;&lt;3&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  // thisDoc = ascii-heart.html
+  var thisDoc = document._currentScript.ownerDocument;
+  // mainDoc = index.html
+  var mainDoc = document;
+  
+  var proto = Object.create(HTMLElement.prototype);
+  proto.createdCallback = function() {
+      var shadowRoot = this.createShadowRoot();
+      var template = thisDoc.querySelector('#heart-template');
+      var clone = thisDoc.importNode(template.content, true);
+      shadowRoot.appendChild(clone);
+  };
+  
+  mainDoc.registerElement('ascii-heart', {
+      prototype: proto
+  });
+&lt;/script&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <ascii-heart></ascii-heart>
+      </super-slide>
+      
+      <!-- POLYMER -------------------------------------------------------------->
+      <super-slide class="polymer chapter">
+        <h1>Polymer</h1>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Polymer</h2>
+        <p class="content">is a library built on top of the web components standards, that helps you build reusable components, 
+            faster and easier</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Web Components Stack</h2>
+        <img src="images/webcomponents_stack.svg">
+      </super-slide>
+      
+      <super-slide>
+        <h2>Polymer features</h2>
+        <ul>
+          <li fragment><span>ッ</span>Element registration</li>
+          <li fragment><span>ッ</span>Local DOM</li>
+          <li fragment><span>ッ</span>Declared Properties</li>
+          <li fragment><span>ッ</span>Data Binding</li>
+          <li fragment><span>ッ</span>Styling</li>
+          <li fragment><span>ッ</span>...</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Custom Element Registration</h2>
+        <p class="content" fragment>To register a custom element, use the <strong>Polymer</strong> function, and pass in the prototype for 
+        the new element</p>
+        
+        <code fragment is="akyral-code" style="margin-top: 20px;">
+var ASCIIHeart = Polymer({
+  is: 'ascii-heart', // type (mandatory ofc ;))
+  properties: {...},
+  ready: function() {...},
+  ...
+});          
+        </code>
+        <hr>
+        <code fragment is="akyral-code">
+// imperative 
+         
+var asciiHeart = document.createElement('ascii-heart');
+// or
+var asciiHeart = new ASCIIHeart();
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+&lt;!-- declarative --&gt;  
+
+&lt;ascii-heart&gt;&lt;/ascii-heart&gt;        
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Prototype chaining</h2>
+        <p class="content">The Polymer function sets up the prototype chain for your custom element, 
+          chaining it to the Polymer Base prototype (which provides Polymer value-added features)</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Polymer.Base</h2>
+        <code is="akyral-code">
+Polymer.Base = {
+  __isPolymerInstance__: true,
+  _addFeature: function() {
+    // pluggable features
+  },
+  registerCallback: function() {...},
+  createdCallback: function() {...},
+  attachedCallback: function() {...},
+  detachedCallback: function() {..},
+  attributeChangedCallback: function() {...},
+  ... 
+};
+
+...
+
+Polymer.Base = Polymer.Base.chainObject(Polymer.Base, HTMLElement.prototype);          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Class-Style Constructor</h2>
+        <p class="content">allows creating a Custom Element without immediately registering it</p>
+          <code fragment is="akyral-code">
+//returns a constructor that can be passed to document.registerElement 
+// to register your element 
+var ASCIIHeart = Polymer.Class({
+  // same prototype argument as the Polymer function
+  is: 'ascii-heart',
+  created: function() {
+    ...
+  }
+  ...
+});           
+          </code>
+          <hr>
+          
+          <code fragment is="akyral-code">
+document.registerElement('ascii-heart', ASCIIHeart);           
+          </code>
+          <hr>
+          
+          <code fragment is="akyral-code">
+var asciiHeart = new ASCIIHeart();
+// or
+var asciiHeart = document.createElement('ascii-heart');           
+          </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Type Extension Elements</h2>
+        <code fragment is="akyral-code">
+var ASCIICarmenSmile = Polymer({
+  is: 'ascii-carmen-smile',
+  extends: 'ascii-smile'
+});          
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">    
+var asciiCarmenSmile = document.createElement('ascii-smile', 'ascii-carmen-smile');
+// or
+var asciiCarmenSmile = new ASCIICarmenSmile();
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">  
+&lt;ascii-smile is="ascii-carmen-smile"&gt;&lt;/ascii-smile&gt;        
+        </code>
+        <hr>
+        
+        <h5 fragment style="margin-bottom: 0px; margin-top 0px;">ONLY native elements!!!</h5>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Lifecycle callbacks</h2>
+        <ul>
+          <li><span>ッ</span>created</li>
+          <li><span>ッ</span>ready</li>
+          <li><span>ッ</span>attached</li>
+          <li><span>ッ</span>detached</li>
+          <li><span>ッ</span>attributeChanged</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Lifecycle callbacks</h2>
+        <ul>
+          <li><span>ッ</span>created</li>
+          <li class="active"><span>シ</span>ready</li>
+          <li><span>ッ</span>attached</li>
+          <li><span>ッ</span>detached</li>
+          <li><span>ッ</span>attributeChanged</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Lifecycle callbacks</h2>
+        <code is="akyral-code">
+Polymer({
+  is: 'ascii-heart',
+  created: function() {
+    /* createdCallback */
+    // Called when the element has been created, 
+    // but before property values are set and local DOM is initialized
+  },
+  ready: function() {
+    // Called after property values are set and local DOM is initialized
+  },
+  attached: function() {
+    /* attachedCallback */
+    // Called after the element is attached to the document
+  },
+  detached: function() {
+    /* detachedCallback */
+    // Called after the element is detached from the document
+  },
+  attributeChanged: function(name, type) {
+    /* attributeChangedCallback*/
+    // Called when one of the element's attributes is changed
+  }
+});          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Local DOM</h2>
+        <p fragment class="content">is the DOM that an element creates</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Local DOM</h2>
+        <p class="content">Polymer supports multiple Local DOM implementations</p>
+        <hr>
+        <ul fragment>
+          <li><span>ッ</span>Shadow DOM - in browsers that support it</li>
+          <li><span>ッ</span>Shady DOM - currently the default for all browsers</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Creating Local DOM</h2>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-heart"&gt;
+
+  &lt;template&gt;
+    &lt;div id="heart"&gt;&lt;3&lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-heart'
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;         
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Node finding</h2>
+        <ul class="content" style="text-align: left;">
+          <li fragment><span>ッ</span>Polymer keeps a map of all static node instances in its local DOM</li>
+          <li fragment><span>ッ</span>nodes with <strong>id</strong>s are stored in <strong>this.$</strong> by id</li>
+          <li fragment><span>ッ</span>dynamically-created nodes can be selected using <strong>this.$$(selector)</strong></li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Node finding</h2>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-heart"&gt;
+
+  &lt;template&gt;
+    &lt;div id="heart"&gt;&lt;3&lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-heart',
+      ready: function() {
+        this.$.heart.textContent = '&lt;3 &lt;3';
+      }
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;         
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Remember our friend ascii-shrug?</h3>
+        <ascii-shrug></ascii-shrug>
+      </super-slide>
+      
+      <super-slide>
+        <p class="content">Let's say you don't like his face and want to make it customizable.</p>
+      </super-slide>
+      
+      <super-slide>
+        <p class="content">That would obviously break the poor fellow's heart &lt;/3</p> 
+        <p class="content" fragment>But he's a smiley. He'll forgive you</p>
+        <ascii-shrug fragment></ascii-shrug>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Insertion Points</h2>
+        <p class="content" fragment>Polymer provides insertion points via the <strong>&lt;content&gt;</strong> element.
+        This element supports a <strong>select</strong> attribute which filters nodes via a simple selector</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Insertion Points</h2>
+        <code is="akyral-code">
+&lt;ascii-shrug&gt;
+  &lt;span class="my-face"&gt;◔◡◔&lt;/span&gt;
+  &lt;span class="my-other-face"&gt;◔.◔&lt;/span&gt;
+&lt;/ascii-shrug&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;dom-module id="ascii-shrug"&gt;
+
+  &lt;template&gt;
+    &lt;div class="right-arm"&gt;¯\_&lt;/div&gt;
+    &lt;div class="face"&gt;
+      &lt;content                  &gt;&lt;/content&gt;
+    &lt;/div&gt;
+    &lt;div class="left-arm"&gt;_/¯&lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-shrug'
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;            
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Insertion Points</h2>
+        <code is="akyral-code">
+&lt;ascii-shrug&gt;
+  &lt;span class="my-face"&gt;◔◡◔&lt;/span&gt;
+  &lt;span class="my-other-face"&gt;◔.◔&lt;/span&gt;
+&lt;/ascii-shrug&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;dom-module id="ascii-shrug"&gt;
+
+  &lt;template&gt;
+    &lt;div class="right-arm"&gt;¯\_&lt;/div&gt;
+    &lt;div class="face"&gt;
+      &lt;content select=".my-face"&gt;&lt;/content&gt;
+    &lt;/div&gt;
+    &lt;div class="left-arm"&gt;_/¯&lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-shrug'
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;            
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <ascii-shrug></ascii-shrug>
+      </super-slide>
+      
+      <super-slide>
+        <h2>DOM API</h2>
+        <p class="content">Polymer provides a custom API for manipulating DOM. Almost all of these methods and properties 
+          have the same signatures as their standard DOM equivalents</p>
+      </super-slide>
+      
+      <super-slide>
+        <h4 style="margin-bottom: 0;">DOM API</h4>
+        <ul>
+          <li><span>ッ</span>Polymer.dom(parent).appendChild(node)</li>
+          <li><span>ッ</span>Polymer.dom(parent).removeChild(node)</li>
+          <li><span>ッ</span>Polymer.dom(node).firstChild</li>
+          <li><span>ッ</span>Polymer.dom(node).nextSibling</li>
+          <li><span>ッ</span>Polymer.dom(node).innerHTML</li>
+          <li><span>ッ</span>Polymer.dom(parent).querySelector(selector)</li>
+          <li><span>ッ</span>
+            <a href="https://github.com/Polymer/polymer/blob/master/src/lib/dom-api-shady.html" target="_blank">...</a>
+          </li>  
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Declared Properties</h2>
+        <p fragment class="content">Are the public API of your element. Having declared properties 
+          on a custom element, allows a user to configure the property from markup </p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Declared Properties</h2>
+                <code is="akyral-code">
+&lt;ascii-hello face="◉◡◉" waving-hand="left"&gt;&lt;/ascii-hello&gt;          
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+Polymer({
+  is: 'ascii-hello',
+
+  
+  
+  
+  
+  
+  
+  
+
+  ready: function() {
+    
+  }
+});          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Declared Properties</h2>
+                <code is="akyral-code">
+&lt;ascii-hello face="◉◡◉" waving-hand="left"&gt;&lt;/ascii-hello&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+Polymer({
+  is: 'ascii-hello',
+
+  properties: {
+    face: String,
+    wavingHand: {
+      type: String,
+      value: 'right'
+    }
+  },
+
+  ready: function() {
+    // do smth with the properties;
+  }
+});          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Property keys</h3>
+        <ul>
+          <li>
+            <span>ッ</span>
+            <strong>type</strong> - Boolean, Date, Number, String, Array or Object
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>value</strong> - boolean, number, string or function. Default property value
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>readOnly</strong> - specifies if the property can be set directly by assignment or data binding
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>notify</strong> - if true, the property is available for two-way data binding
+          </li>
+          <li>
+            <span>ッ</span>
+            <strong>observer</strong> - function called when the property value changes
+          </li>
+          <li>
+            <span>ッ</span>
+            ...
+          </li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Data Binding</h2>
+        <p fragment class="content">binds a property or sub-property of a custom element (the host element) 
+          to a property or attribute of an element in its local DOM (the child or target element)</p>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Data Binding</h2>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-host"&gt;
+    &lt;template&gt;
+      &lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;  
+    &lt;/template&gt;
+    
+    &lt;script&gt;
+      Polymer({
+        is: 'ascii-host',
+        properties: {
+          discoColor: String
+        }
+      });
+    &lt;/script&gt;
+&lt;/dom-module&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Data Binding Annotations</h2>
+        <ul class="content" style="text-align: left; width: 1200px;">
+          <li><span>ッ</span><strong>[[]]</strong> - one-way binding. Data flow is downward, from host to child</li>
+          <li><span>ッ</span><strong>{{}}</strong> - automatic binding. Can be both one-way or two-way, depending
+          on the target's configuration</li>
+        </ul>
+      </super-slide>
+      
+      <super-slide>
+        <h3>That last one was a bit...confuuusing</h3>
+        <ascii-confused style="font-size: 3em;"></ascii-confused>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Put on those party glasses</h3>
+        <h2 style="color: yellow; text-shadow: 1px 1px grey;"> ▧.▨ ≧✯◡✯≦✌ </h2>
+        <h3>We've got some explaining to do</h3>
+      </super-slide>
+      
+      <super-slide>
+        <h3>One-way Data Binding(downward)</h3>
+        <code is="akyral-code">
+&lt;ascii-smiley color="[[discoColor]]"&gt;&lt;/ascii-smiley&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;script&gt;
+  Polymer({
+    is: 'ascii-smiley',
+    properties: {
+      color: {
+        type: String,
+        notify: true
+      }
+    }
+  });
+&lt;/script&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt!-- changes to hosts's "discoColor" propagate to child's "color" --&gt;
+&lt;!-- changes to child's "color" are ignored by host due to [[]] syntax --&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>One-way Data Binding(downward)</h3>
+        <code is="akyral-code">
+&lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;script&gt;
+  Polymer({
+    is: 'ascii-smiley',
+    properties: {
+      color: {
+        type: String,
+        notify: false
+      }
+    }
+  });
+&lt;/script&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt!-- changes to hosts's "discoColor" propagate to child's "color" --&gt;
+&lt;!-- host won't be notified by changes to child's "color" due to notify:falsey --&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>One-way Data Binding(upward)</h3>
+        <code is="akyral-code">
+&lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;script&gt;
+  Polymer({
+    is: 'ascii-smiley',
+    properties: {
+      color: {
+        type: String,
+        notify: true,
+        readOnly: true
+      }
+    }
+  });
+&lt;/script&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt!-- changes to hosts's "discoColor" are ignored by child due to readOnly:true --&gt;
+&lt;!-- changes to child's "color" propagate to host's "discoColor" --&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h3>Two-way Data Binding</h3>
+        <code is="akyral-code">
+&lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
+&lt;script&gt;
+  Polymer({
+    is: 'ascii-smiley',
+    properties: {
+      color: {
+        type: String,
+        notify: true
+      }
+    }
+  });
+&lt;/script&gt;          
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Binding to text content</h2>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-paradise"&gt;
+
+  &lt;template&gt;
+    &lt;!-- Binding to text content --&gt;
+    {{greeting}} from ASCII Paradise!
+    
+    &lt;!-- Binding to sub-properties --&gt;
+    &lt;ascii-smiley face="{{smiley.face}}" 
+           smile-size="{{smiley.smileSize}}"&gt;&lt;/ascii-smiley&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-paradise',
+      properties: {
+        greeting: String,
+        smiley: Object
+      }
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Styling</h2>
+        <p fragment class="content">Scoped styles should be provided via &lt;style&gt; tags placed inside 
+          the element’s local DOM &lt;template&gt;</p>
+        <code fragment is="akyral-code">
+&lt;dom-module id="ascii-hello"&gt;
+  &lt;template&gt;
+    &lt;style&gt;
+      :host {
+        /* host styles*/
+      }
+      .right-arm {
+        /* element with class "right-arm" styles*/
+      }
+    &lt;/style&gt;
+
+    &lt;div class="right-arm"&gt;&lt;/div&gt;
+    &lt;div class="head"&gt;&lt;/div&gt;
+  &lt;/template&gt;
+  ...
+&lt;/dom-module&gt;           
+        </code>
+      </super-slide>
+      
+      <super-slide>
+        <h2>Style Modules</h2>
+        <p class="content">are used to share style declarations between elements</p>
+        <hr>
+        <code fragment is="akyral-code">
+&lt;!-- ascii-heart-style.html --&gt;
+
+&lt;dom-module id="ascii-heart-style"&gt;
+  &lt;template&gt;
+    &lt;style&gt;
+      :host { color: red; }
+    &lt;/style&gt;
+  &lt;/template&gt;
+&lt;/dom-module&gt;          
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+&lt;!-- ascii-heart.html --&gt;
+
+&lt;link rel="import" href="../ascii-heart-style.html"&gt;
+
+&lt;dom-module id="ascii-heart"&gt;
+  &lt;template&gt;
+    &lt;style is="custom-style" include="ascii-hug-style"&gt;&lt;/style&gt;
+  &lt;/template&gt;
+  
+  ...
+&lt;/dom-module&gt;          
+        </code>
+      </super-slide>
+      
+      <!-- LIVE CODING ----------------------------------------------------------> 
+      <super-slide>
+        <h3>Time to get coding</h3>
+        <hr>
+        <ascii-carmen-smile with-spling></ascii-carmen-smile>
+      </super-slide>
+      
+      <!-- LET ME TELL YOU ANOTHER STORY ---------------------------------------------->
+      <super-slide class="story chapter">
+        <h1>Let me tell you one last story</h1>
+      </super-slide>  
+      
+      <super-slide>
+        <img src="images/screenshot2.png">
+      </super-slide>
+      
+      <super-slide>
+        <img src="images/schon.jpg">
+      </super-slide>
+      
+      <super-slide class="outro chapter">
+        <h2>Thank you!</h2>
+        <h3>≧◠◡◠≦✌</h3>
+      </super-slide>
+    </super-presentation>
+  </body>
+</html>

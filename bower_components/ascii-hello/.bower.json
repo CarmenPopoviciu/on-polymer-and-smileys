@@ -1,0 +1,40 @@
+{
+  "name": "ascii-hello",
+  "authors": [
+    "Carmen Popoviciu <carmen.popoviciu@gmail.com>"
+  ],
+  "description": "Hey world! Animated ascii hello Polymer element.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "ascii",
+    "ascii hello",
+    "smileys"
+  ],
+  "main": "ascii-hello.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/CarmenPopoviciu/ascii-hello/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "prefixfree": "*"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "76aef5c8a2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "76aef5c8a28d147560bbf8a37928d36ac216aef2"
+  },
+  "_source": "git@github.com:CarmenPopoviciu/ascii-hello.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:CarmenPopoviciu/ascii-hello.git"
+}

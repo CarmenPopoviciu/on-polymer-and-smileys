@@ -1,0 +1,40 @@
+{
+  "name": "ascii-smile",
+  "authors": [
+    "Carmen Popoviciu <carmen.popoviciu@gmail.com>"
+  ],
+  "description": "A big smile for a sunny day. Animated ascii smiley Polymer element.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "ascii",
+    "ascii smile",
+    "smileys"
+  ],
+  "main": "ascii-smile.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/CarmenPopoviciu/ascii-smile/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "prefixfree": "*"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "8efe3cd65e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8efe3cd65e8145ed3cc6bc2c4d328497b08e6d14"
+  },
+  "_source": "git@github.com:CarmenPopoviciu/ascii-smile.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:CarmenPopoviciu/ascii-smile.git"
+}

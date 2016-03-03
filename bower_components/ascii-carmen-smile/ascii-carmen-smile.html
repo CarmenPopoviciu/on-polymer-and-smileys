@@ -1,0 +1,72 @@
+<link rel="import" href="../polymer/polymer.html">
+<script href="../prefixfree/prefixfree.min.js"></script>
+
+<!--
+Happy Polymer emoticon, with a Carmen smile.
+
+Example:
+
+    <ascii-carmen-smile></ascii-carmen-smile>
+
+@demo
+-->
+<dom-module id="ascii-carmen-smile">
+  <style>
+    :host {
+      height: 25px;
+      font: 1.1em verdana;
+    }
+
+    .eyes {
+      float: left;
+      letter-spacing: 0.1em;
+      font: 1.6em monospace;
+      margin-left: 0.4px;
+    } 
+
+    .mouth {
+      height: 30px;
+      width: 25px;
+      margin-left: 2.5px;
+      border-bottom: 1px solid black;
+      border-radius: 0 0 7px 7px;
+      animation: smile 5s linear forwards 1;
+    }
+    
+    .spling {
+      font-size: 0.5em;
+      vertical-align: top;
+      opacity: 0;
+      animation: spling 1s linear forwards 2s;
+    }
+
+    @keyframes smile {
+      100% {border-radius: 0 0 30px 30px;}
+    }
+    
+    @keyframes spling {
+      100% {opacity: 1;}
+    }
+  </style>
+  
+  <template>
+    <div>
+      <div class="eyes">
+        <span>^^</span><template is="dom-if" if="{{withSpling}}"><span class="spling">❤</span></template>
+      </div>
+      <div class="mouth"></div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'ascii-carmen-smile',
+    properties: {
+      withSpling: {
+        type: Boolean,
+        value: false
+      }
+    }
+  });
+</script>

@@ -1,0 +1,79 @@
+<link rel="import" href="../polymer/polymer.html">
+<script href="../prefixfree/prefixfree.min.js"></script>
+
+<!--
+Animated ascii shrug emoticon as Polymer element.
+
+Example:
+
+    <ascii-shrug></ascii-shrug>
+
+@demo
+-->
+<dom-module id="ascii-shrug">
+  <style>
+    :host {
+      height: 25px;
+      font: 1.1em verdana;
+    }
+
+    :host div {
+      float: left;
+    }
+
+    .right-shoulder, .left-shoulder {
+      animation: shoulder-movement 2s ease-in forwards 1;
+    }
+
+    .right-arm, .left-arm {
+      animation: arm-movement 2s ease-in forwards 1;
+      transform-origin: top;
+    }
+
+    .right-hand {
+      animation: right-hand-movement 2s ease-in forwards 1;
+    }
+
+    .left-hand {
+      animation: left-hand-movement 2s ease-in forwards 1;
+    }
+
+    /* SHOULDER MOVEMENT ========================================================================================*/
+    @keyframes shoulder-movement {
+        50% {transform: translateY(-5px);}
+    }
+
+    /* ARM MOVEMENT =============================================================================================*/
+    @keyframes arm-movement {
+        50% {transform: scaleY(0.7);}
+    }
+
+    /* RIGHT HAND MOVEMENT ======================================================================================*/
+    @keyframes right-hand-movement {
+        50% {transform: rotate(-10deg);}
+    }
+
+    /* LEFT HAND MOVEMENT =======================================================================================*/
+    @keyframes left-hand-movement {
+        50% {transform: rotate(10deg);}
+    }
+  </style>
+  
+  <template>
+    <div>
+      <div class="right-hand">¯</div>
+      <div class="right-arm">\</div>
+      <div class="right-shoulder">_</div>
+      <div class="head">(ツ)</div>
+      <div class="left-shoulder">_</div>
+      <div class="left-arm">/</div>
+      <div class="left-hand">¯</div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'ascii-shrug'
+  });
+</script>

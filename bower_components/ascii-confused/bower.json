@@ -1,0 +1,32 @@
+{
+  "name": "ascii-confused",
+  "version": "1.0.0",
+  "authors": [
+    "Carmen Popoviciu <carmen.popoviciu@gmail.com>"
+  ],
+  "description": "One confused smiley. Animated ascii confused emoticon as Polymer element.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "ascii",
+    "ascii confused",
+    "smileys"
+  ],
+  "main": "ascii-confused.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/CarmenPopoviciu/ascii-confused/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "prefixfree": "*"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  }
+}

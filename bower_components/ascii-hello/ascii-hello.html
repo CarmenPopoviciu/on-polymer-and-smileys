@@ -1,0 +1,50 @@
+<link rel="import" href="../polymer/polymer.html">
+<script href="../prefixfree/prefixfree.min.js"></script>
+
+<!--
+Animated ascii hello Polymer element.
+
+Example:
+
+    <ascii-hello></ascii-hello>
+
+@demo
+-->
+<dom-module id="ascii-hello">
+  <style>
+    :host {
+      width: 50px;
+      height: 25px;
+      font: 1.1em verdana;
+      letter-spacing: 0.1em;
+    }
+
+    :host div {
+      float: left;
+    }
+
+    .arm {
+      animation: wave-hello 1.5s linear infinite;
+      transform-origin: left bottom;
+    }
+
+    @keyframes wave-hello {
+      0%	 {transform: rotate(0deg);}
+      30%  {transform: rotate(20deg);}
+      75% {transform: rotate(-25deg);}
+    }
+  </style>
+  
+  <template>
+    <div>
+      <div class="head">o</div>
+      <div class="arm">/</div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'ascii-hello'
+  });
+</script>

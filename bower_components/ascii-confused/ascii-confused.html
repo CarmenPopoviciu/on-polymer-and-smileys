@@ -1,0 +1,50 @@
+<link rel="import" href="../polymer/polymer.html">
+<script href="../prefixfree/prefixfree.min.js"></script>
+
+<!--
+An element providing a solution to no problem in particular.
+
+Example:
+
+    <ascii-confused></ascii-confused>
+
+@demo
+-->
+<dom-module id="ascii-confused">
+  <style>
+    :host {
+      height: 20px;
+      font: 1.1em verdana;
+    }
+
+    :host div {
+      text-align: center;
+      vertical-align: middle;
+      float: left;
+    }
+
+    .right-eye, .left-eye {
+      animation: eye-movement 1s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes eye-movement 
+    {
+      100% {transform: rotate(-360deg);}
+    }  
+  </style>
+  
+  <template>
+    <div>
+      <div class="right-eye">@</div>
+      <div class="mouth">_</div>
+      <div class="left-eye">@</div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'ascii-confused'
+  });
+</script>
