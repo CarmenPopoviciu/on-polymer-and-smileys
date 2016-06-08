@@ -90,7 +90,8 @@ html, body {
  }
  
  .akyral-code {
-   width: 800px;
+   width: 1000px;
+   font-size: 1.5em;
  }
  
  .content {
@@ -160,7 +161,7 @@ html, body {
  }
  
  .story {
-   background: url("images/clouds2.jpg") center no-repeat;
+   background: url("images/smileAndSayHi.jpg") center no-repeat;
    background-size: cover; 
    text-shadow: 1px 1px #6B6464;
  }
@@ -178,4 +179,13 @@ html, body {
  .star-rain {
    background: url("images/smileyrain.gif") center no-repeat;
    background-size: cover;
+ }
+
+ ascii-hello .head, ascii-hello .arm {
+   font-size: 2em;
+ }
+
+ .h3-heart {
+   width:125px; 
+   text-align:left;
  }

@@ -94,19 +94,6 @@
       </super-slide>
       
       <super-slide>
-        <h3 class="content" style="color: #EA1CA9;">Pink is not the coolest color ever, 
-          but sometimes it can be fun</h3>
-      </super-slide>
-      
-      <super-slide>
-        <h4 class="content">Random pictures that you take from the airplane can sometimes
-          turn out to be useful</h4>
-        <div style="margin-top: 40px; font-size: 1.5em;">
-          <strong>#unfiltered #friendsforever #unicorns #rainbows #allthatstuff </strong>
-        </div>  
-      </super-slide>
-      
-      <super-slide>
         <h4>The true heroes of this talk are:</h4>
         <p style="margin-bottom: 0px;">
           <strong>(>‿◠)✌  Guilherme Rv Coelho</strong>
@@ -201,7 +188,7 @@
       
       <super-slide>
         <h2>Custom Elements</h2>
-        <p class="content">Allow you to extend the HTML vocabulary and define your own, new, fully-featured DOM 
+        <p class="content">Allow authors to extend the HTML vocabulary and define their own, new, fully-featured DOM 
           elements</p>
       </super-slide>
       
@@ -223,7 +210,7 @@
       </super-slide>
       
       <super-slide>
-        <h3>Custom Element Registration</h3>
+        <h4 style="margin-bottom: 0;">Autonomous Custom Element Registration</h4>
         <p fragment>Is the process of adding an element definition to a registry</p>
         <code fragment is="akyral-code">
 document.registerElement('ascii-smile', // the type
@@ -241,7 +228,7 @@ document.registerElement('ascii-smile', // the type
       </super-slide>
       
       <super-slide>
-        <h3>Type Extension Custom Elements</h3>
+        <h4 style="margin-bottom: 0;">Customized Built-In Elements</h4>
         <p fragment>are Custom Elements that extend other existing elements</p>
         <code fragment is="akyral-code">
 var AsciiSmileProto = Object.create(HTMLElement.prototype);
@@ -315,8 +302,8 @@ document.registerElement('ascii-carmen-smile',
       </super-slide>
       
       <super-slide>
-        <h4 class="no-margin">Declaring a Template</h4>
-        <code fragment is="akyral-code">
+        <h4 class="no-margin">Declaring/Enabling a Template</h4>
+        <code fragment is="akyral-code" style="margin-bottom: 10px;">
 &lt;template id="template"&gt;
   &lt;style&gt;...&lt;/style&gt;
   &lt;div&gt;
@@ -326,8 +313,7 @@ document.registerElement('ascii-carmen-smile',
   &lt;/div&gt;
 &lt;/template&gt;
         </code>
-        
-        <h4 fragment class="no-margin">Enabling a Template</h4>
+
         <code fragment is="akyral-code">
 &lt;script&gt;
   var template = document.querySelector('#template');
@@ -503,7 +489,7 @@ var content = document.querySelector('link[rel="import"]').import;
       </super-slide>
       
       <super-slide>
-        <h2>Custom Element Registration</h2>
+        <h3>Custom Element Registration</h3>
         <p class="content" fragment>To register a custom element, use the <strong>Polymer</strong> function, and pass in the prototype for 
         the new element</p>
         
@@ -523,12 +509,29 @@ var asciiHeart = document.createElement('ascii-heart');
 // or
 var asciiHeart = new ASCIIHeart();
         </code>
+      </super-slide>
+
+      <super-slide>
+        <h3>Custom Element Registration</h3>
+        <p class="content">To register a custom element, use the <strong>Polymer</strong> function, and pass in the prototype for 
+        the new element</p>
+        
+        <code is="akyral-code" style="margin-top: 20px;">
+var ASCIIHeart = Polymer({
+  is: 'ascii-heart', // type (mandatory ofc ;))
+  properties: {...},
+  ready: function() {...},
+  ...
+});          
+        </code>
         <hr>
         
-        <code fragment is="akyral-code">
+        <code is="akyral-code">
 &lt;!-- declarative --&gt;  
 
-&lt;ascii-heart&gt;&lt;/ascii-heart&gt;        
+&lt;ascii-heart&gt;&lt;/ascii-heart&gt; 
+
+
         </code>
       </super-slide>
       
@@ -539,7 +542,7 @@ var asciiHeart = new ASCIIHeart();
       </super-slide>
       
       <super-slide>
-        <h2>Polymer.Base</h2>
+        <h3>Polymer.Base</h3>
         <code is="akyral-code">
 Polymer.Base = {
   __isPolymerInstance__: true,
@@ -556,41 +559,61 @@ Polymer.Base = {
 
 ...
 
-Polymer.Base = Polymer.Base.chainObject(Polymer.Base, HTMLElement.prototype);          
+Polymer.Base = Polymer.Base
+                .chainObject(Polymer.Base, HTMLElement.prototype);          
         </code>
       </super-slide>
       
       <super-slide>
-        <h2>Class-Style Constructor</h2>
+        <h3>Class-Style Constructor</h3>
         <p class="content">allows creating a Custom Element without immediately registering it</p>
-          <code fragment is="akyral-code">
+        <code fragment is="akyral-code">
 //returns a constructor that can be passed to document.registerElement 
 // to register your element 
 var ASCIIHeart = Polymer.Class({
-  // same prototype argument as the Polymer function
-  is: 'ascii-heart',
-  created: function() {
-    ...
-  }
+// same prototype argument as the Polymer function
+is: 'ascii-heart',
+created: function() {
   ...
+}
+...
 });           
-          </code>
-          <hr>
-          
-          <code fragment is="akyral-code">
-document.registerElement('ascii-heart', ASCIIHeart);           
-          </code>
-          <hr>
-          
-          <code fragment is="akyral-code">
+        </code>
+        <hr>
+        
+        <code fragment is="akyral-code">
+document.registerElement('ascii-heart', ASCIIHeart);  
+
+
+        </code>
+      </super-slide>
+
+      <super-slide>
+        <h3>Class-Style Constructor</h3>
+        <p class="content">allows creating a Custom Element without immediately registering it</p>
+        <code is="akyral-code">
+//returns a constructor that can be passed to document.registerElement 
+// to register your element 
+var ASCIIHeart = Polymer.Class({
+// same prototype argument as the Polymer function
+is: 'ascii-heart',
+created: function() {
+  ...
+}
+...
+});           
+        </code>
+        <hr>
+        
+        <code is="akyral-code">
 var asciiHeart = new ASCIIHeart();
 // or
 var asciiHeart = document.createElement('ascii-heart');           
-          </code>
+        </code>
       </super-slide>
       
       <super-slide>
-        <h2>Type Extension Elements</h2>
+        <h3>Type Extension Elements</h3>
         <code fragment is="akyral-code">
 var ASCIICarmenSmile = Polymer({
   is: 'ascii-carmen-smile',
@@ -637,17 +660,17 @@ var asciiCarmenSmile = new ASCIICarmenSmile();
       </super-slide>
       
       <super-slide>
-        <h2>Lifecycle callbacks</h2>
+        <h3>Lifecycle callbacks</h3>
         <code is="akyral-code">
 Polymer({
   is: 'ascii-heart',
   created: function() {
     /* createdCallback */
-    // Called when the element has been created, 
-    // but before property values are set and local DOM is initialized
+    // Called when the element has been created, but before 
+    // property values are set and local DOM is initialized
   },
   ready: function() {
-    // Called after property values are set and local DOM is initialized
+    // Called after prop values are set & local DOM is initialized
   },
   attached: function() {
     /* attachedCallback */
@@ -731,28 +754,13 @@ Polymer({
       </super-slide>
       
       <super-slide>
-        <h3>Remember our friend ascii-shrug?</h3>
-        <ascii-shrug></ascii-shrug>
-      </super-slide>
-      
-      <super-slide>
-        <p class="content">Let's say you don't like his face and want to make it customizable.</p>
-      </super-slide>
-      
-      <super-slide>
-        <p class="content">That would obviously break the poor fellow's heart &lt;/3</p> 
-        <p class="content" fragment>But he's a smiley. He'll forgive you</p>
-        <ascii-shrug fragment></ascii-shrug>
-      </super-slide>
-      
-      <super-slide>
         <h2>Insertion Points</h2>
         <p class="content" fragment>Polymer provides insertion points via the <strong>&lt;content&gt;</strong> element.
         This element supports a <strong>select</strong> attribute which filters nodes via a simple selector</p>
       </super-slide>
       
       <super-slide>
-        <h2>Insertion Points</h2>
+        <h3>Insertion Points</h3>
         <code is="akyral-code">
 &lt;ascii-shrug&gt;
   &lt;span class="my-face"&gt;◔◡◔&lt;/span&gt;
@@ -763,7 +771,6 @@ Polymer({
         
         <code is="akyral-code">
 &lt;dom-module id="ascii-shrug"&gt;
-
   &lt;template&gt;
     &lt;div class="right-arm"&gt;¯\_&lt;/div&gt;
     &lt;div class="face"&gt;
@@ -771,19 +778,17 @@ Polymer({
     &lt;/div&gt;
     &lt;div class="left-arm"&gt;_/¯&lt;/div&gt;
   &lt;/template&gt;
-
   &lt;script&gt;
     Polymer({
       is: 'ascii-shrug'
     });
   &lt;/script&gt;
-
 &lt;/dom-module&gt;            
         </code>
       </super-slide>
       
       <super-slide>
-        <h2>Insertion Points</h2>
+        <h3>Insertion Points</h3>
         <code is="akyral-code">
 &lt;ascii-shrug&gt;
   &lt;span class="my-face"&gt;◔◡◔&lt;/span&gt;
@@ -794,7 +799,6 @@ Polymer({
         
         <code is="akyral-code">
 &lt;dom-module id="ascii-shrug"&gt;
-
   &lt;template&gt;
     &lt;div class="right-arm"&gt;¯\_&lt;/div&gt;
     &lt;div class="face"&gt;
@@ -802,13 +806,11 @@ Polymer({
     &lt;/div&gt;
     &lt;div class="left-arm"&gt;_/¯&lt;/div&gt;
   &lt;/template&gt;
-
   &lt;script&gt;
     Polymer({
       is: 'ascii-shrug'
     });
   &lt;/script&gt;
-
 &lt;/dom-module&gt;            
         </code>
       </super-slide>
@@ -973,7 +975,7 @@ Polymer({
       </super-slide>
       
       <super-slide>
-        <h3>One-way Data Binding(downward)</h3>
+        <h4 style="margin-bottom: 0; margin-top:0;">One-way Data Binding(downward)</h4>
         <code is="akyral-code">
 &lt;ascii-smiley color="[[discoColor]]"&gt;&lt;/ascii-smiley&gt;          
         </code>
@@ -996,12 +998,12 @@ Polymer({
         
         <code is="akyral-code">
 &lt!-- changes to hosts's "discoColor" propagate to child's "color" --&gt;
-&lt;!-- changes to child's "color" are ignored by host due to [[]] syntax --&gt;          
+&lt;!-- changes to child's "color" are ignored by host due to [[]] --&gt;          
         </code>
       </super-slide>
       
       <super-slide>
-        <h3>One-way Data Binding(downward)</h3>
+        <h4 style="margin-bottom: 0; margin-top:0;">One-way Data Binding(downward)</h4>
         <code is="akyral-code">
 &lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
         </code>
@@ -1024,12 +1026,13 @@ Polymer({
         
         <code is="akyral-code">
 &lt!-- changes to hosts's "discoColor" propagate to child's "color" --&gt;
-&lt;!-- host won't be notified by changes to child's "color" due to notify:falsey --&gt;          
+&lt;!-- host won't be notified by changes to child's "color" due to 
+     notify:falsey --&gt;          
         </code>
       </super-slide>
       
       <super-slide>
-        <h3>One-way Data Binding(upward)</h3>
+        <h4 style="margin-bottom:0; margin-top:0;">One-way Data Binding(upward)</h4>
         <code is="akyral-code">
 &lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
         </code>
@@ -1052,13 +1055,14 @@ Polymer({
         <hr>
         
         <code is="akyral-code">
-&lt!-- changes to hosts's "discoColor" are ignored by child due to readOnly:true --&gt;
+&lt!-- changes to hosts's "discoColor" are ignored by child due to 
+     readOnly:true --&gt;
 &lt;!-- changes to child's "color" propagate to host's "discoColor" --&gt;          
         </code>
       </super-slide>
       
       <super-slide>
-        <h3>Two-way Data Binding</h3>
+        <h4 style="margin-bottom: 0; margin-top:0;">Two-way Data Binding</h4>
         <code is="akyral-code">
 &lt;ascii-smiley color="{{discoColor}}"&gt;&lt;/ascii-smiley&gt;          
         </code>
@@ -1080,10 +1084,9 @@ Polymer({
       </super-slide>
       
       <super-slide>
-        <h2>Binding to text content</h2>
+        <h4 style="margin-bottom: 0; margin-top:0;">Binding to text content</h4>
         <code is="akyral-code">
 &lt;dom-module id="ascii-paradise"&gt;
-
   &lt;template&gt;
     &lt;!-- Binding to text content --&gt;
     {{greeting}} from ASCII Paradise!
@@ -1102,7 +1105,6 @@ Polymer({
       }
     });
   &lt;/script&gt;
-
 &lt;/dom-module&gt;
         </code>
       </super-slide>
@@ -1122,7 +1124,6 @@ Polymer({
         /* element with class "right-arm" styles*/
       }
     &lt;/style&gt;
-
     &lt;div class="right-arm"&gt;&lt;/div&gt;
     &lt;div class="head"&gt;&lt;/div&gt;
   &lt;/template&gt;
@@ -1132,12 +1133,11 @@ Polymer({
       </super-slide>
       
       <super-slide>
-        <h2>Style Modules</h2>
+        <h4 style="margin-bottom: 0; margin-top:0;">Style Modules</h4>
         <p class="content">are used to share style declarations between elements</p>
         <hr>
         <code fragment is="akyral-code">
 &lt;!-- ascii-heart-style.html --&gt;
-
 &lt;dom-module id="ascii-heart-style"&gt;
   &lt;template&gt;
     &lt;style&gt;
@@ -1150,38 +1150,86 @@ Polymer({
         
         <code fragment is="akyral-code">
 &lt;!-- ascii-heart.html --&gt;
-
 &lt;link rel="import" href="../ascii-heart-style.html"&gt;
-
 &lt;dom-module id="ascii-heart"&gt;
   &lt;template&gt;
-    &lt;style is="custom-style" include="ascii-hug-style"&gt;&lt;/style&gt;
-  &lt;/template&gt;
-  
+    &lt;style is="custom-style" include="ascii-heart-style"&gt;&lt;/style&gt;
+  &lt;/template&gt; 
   ...
 &lt;/dom-module&gt;          
         </code>
       </super-slide>
       
       <!-- LIVE CODING ----------------------------------------------------------> 
-      <super-slide>
+      <!--<super-slide>
         <h3>Time to get coding</h3>
         <hr>
         <ascii-carmen-smile with-spling></ascii-carmen-smile>
+      </super-slide>-->
+
+      <super-slide>
+        <h3 class="h3-heart">❤</h3>
+        <h4 style="margin-top:0px;">&lt;ascii-heart&gt;&lt;/ascii-heart&gt;</h4>
+      </super-slide>
+      
+      <super-slide>
+        <code is="akyral-code">
+&lt;template id="heart-template"&gt;
+  &lt;style&gt;
+    ...
+  &lt;/style&gt;
+
+  &lt;div id="ascii-heart"&gt;&lt;3&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  // thisDoc = ascii-heart.html
+  var thisDoc = document._currentScript.ownerDocument;
+  // mainDoc = index.html
+  var mainDoc = document;
+  
+  var proto = Object.create(HTMLElement.prototype);
+  proto.createdCallback = function() {
+      var shadowRoot = this.createShadowRoot();
+      var template = thisDoc.querySelector('#heart-template');
+      var clone = thisDoc.importNode(template.content, true);
+      shadowRoot.appendChild(clone);
+  };
+  
+  mainDoc.registerElement('ascii-heart', {
+      prototype: proto
+  });
+&lt;/script&gt;          
+        </code>
+      </super-slide>
+
+      <super-slide>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-heart"&gt;
+  &lt;style&gt;
+    ...
+  &lt;/style&gt;
+  
+  &lt;template&gt;
+    &lt;div class="ascii-heart"&gt;&lt;3&lt;/div&gt;
+  &lt;/template&gt;
+&lt;/dom-module&gt;
+
+&lt;script&gt;
+  Polymer({
+    is: 'ascii-heart'
+  });
+&lt;/script&gt;
+        </code>
+      </super-slide>
+
+      <super-slide>
+        <ascii-heart></ascii-heart>
       </super-slide>
       
       <!-- LET ME TELL YOU ANOTHER STORY ---------------------------------------------->
       <super-slide class="story chapter">
-        <h1>Let me tell you one last story</h1>
       </super-slide>  
-      
-      <super-slide>
-        <img src="images/screenshot2.png">
-      </super-slide>
-      
-      <super-slide>
-        <img src="images/schon.jpg">
-      </super-slide>
       
       <super-slide class="outro chapter">
         <h2>Thank you!</h2>
