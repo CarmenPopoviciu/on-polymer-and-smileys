@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
     <link rel="import" href="../bower_components/ascii-heart/ascii-heart.html">
     <link rel="import" href="../bower_components/ascii-smile/ascii-smile.html">
     <link rel="import" href="../bower_components/ascii-carmen-smile/ascii-carmen-smile.html">
@@ -14,9 +16,12 @@
     <link rel="import" href="../bower_components/ascii-eyebrow/ascii-eyebrow.html">
     <link rel="import" href="../bower_components/ascii-confused/ascii-confused.html">
     <link rel="import" href="../bower_components/paper-styles/paper-styles.html">
-    <link rel="import" href="../bower_components/super-presentation/super-presentation.html">
     <link rel="import" href="../bower_components/super-presentation/super-slide.html">
+    <link rel="import" href="../bower_components/super-presentation/super-presentation.html">
     <link rel="import" href="../bower_components/akyral-code/akyral-code.html">
+
+    <!-- IMPORT DEMO ELEMENTS HERE -->
+    <!-- END DEMO ELEMENTS -->
     
     <link rel="stylesheet" href="../bower_components/highlightjs/styles/zenburn.css">
     <link rel="stylesheet" href="styles.css">
@@ -37,7 +42,8 @@
       </super-slide>
       
       <super-slide>
-        <ascii-hello></ascii-hello>
+        <!--INSERT DEMO ELEMENT HERE-->
+        <h4>Live coding magic happening on stage right now ;)</h4>
       </super-slide>
       
       <super-slide>
@@ -82,15 +88,12 @@
       </super-slide>
       
       <super-slide>
-        <h1>About this talk</h1>
-      </super-slide>
-      
-      <super-slide>
-        <img src="images/screenshot.png">
-      </super-slide>
-      
-      <super-slide>
-        <h3 class="content">ASCII smileys make the Web a better place</h3>
+        <h2>About this talk</h2>
+        <ul>
+          <li class="fragment">Intro concepts about Web Components</li>
+          <li class="fragment">Polymer fundamentals</li>
+          <li class="fragment">Why ASCII smileys make the Web a better place</li>
+        </ul>
       </super-slide>
       
       <super-slide>
@@ -357,11 +360,11 @@ document.registerElement('ascii-carmen-smile',
           </li>
           <li>
             <span>ッ</span>
-            <strong>Shadow tree</strong> - a node tree hosted by a shadow host
+            <strong>Shadow root</strong> - the root node of a shadow tree
           </li>
           <li>
             <span>ッ</span>
-            <strong>Shadow root</strong> - the root node of a shadow tree
+            <strong>Shadow tree</strong> - a node tree hosted by a shadow host
           </li>
         </ul>
       </super-slide>
@@ -510,7 +513,7 @@ var content = document.querySelector('link[rel="import"]').import;
         
         <code fragment is="akyral-code" style="margin-top: 20px;">
 var ASCIIHeart = Polymer({ // element prototype
-  is: 'ascii-heart', // type (mandatory ofc ;))
+  is: 'ascii-heart', // tag name (mandatory)
   properties: {...},
   ready: function() {...},
   ...
@@ -533,7 +536,7 @@ var asciiHeart = new ASCIIHeart();
         
         <code is="akyral-code" style="margin-top: 20px;">
 var ASCIIHeart = Polymer({ // element prototype
-  is: 'ascii-heart', // type (mandatory ofc ;))
+  is: 'ascii-heart', // tag name (mandatory)
   properties: {...},
   ready: function() {...},
   ...
@@ -607,8 +610,8 @@ document.registerElement('ascii-heart', ASCIIHeart);
         <h3>Class-Style Constructor</h3>
         <p class="content">allows creating a Custom Element without immediately registering it</p>
         <code is="akyral-code">
-//returns a constructor that can be passed to document.registerElement 
-// to register your element 
+// returns a constructor that can be passed to 
+// document.registerElement to register your element 
 var ASCIIHeart = Polymer.Class({
 // same prototype argument as the Polymer function
 is: 'ascii-heart',
@@ -630,23 +633,23 @@ var asciiHeart = document.createElement('ascii-heart');
       <super-slide>
         <h3>Type Extension Elements</h3>
         <code fragment is="akyral-code">
-var ASCIICarmenSmile = Polymer({
-  is: 'ascii-carmen-smile',
-  extends: 'ascii-smile'
+var ASCIICarmenSmileBtn = Polymer({
+  is: 'ascii-carmen-smile-btn',
+  extends: 'button'
 });          
         </code>
         <hr>
         
         <code fragment is="akyral-code">    
-var asciiCarmenSmile = document.createElement('ascii-smile', 
-                       'ascii-carmen-smile');
+var asciiCarmenSmileBtn = document.createElement('button', 
+                       'ascii-carmen-smile-btn');
 // or
-var asciiCarmenSmile = new ASCIICarmenSmile();
+var asciiCarmenSmileBtn = new ASCIICarmenSmileBtn();
         </code>
         <hr>
         
         <code fragment is="akyral-code">  
-&lt;ascii-smile is="ascii-carmen-smile"&gt;&lt;/ascii-smile&gt;        
+&lt;button is="ascii-carmen-smile"&gt;&lt;/button&gt;        
         </code>
         <hr>
         
@@ -823,6 +826,28 @@ Polymer({
         </ul>
       </super-slide>
       
+      <super-slide>
+        <h2>Node finding</h2>
+        <code is="akyral-code">
+&lt;dom-module id="ascii-heart"&gt;
+
+  &lt;template&gt;
+    &lt;div id="heart"&gt;&lt;3&lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    Polymer({
+      is: 'ascii-heart',
+      ready: function() {
+        
+      }
+    });
+  &lt;/script&gt;
+
+&lt;/dom-module&gt;         
+        </code>
+      </super-slide>
+
       <super-slide>
         <h2>Node finding</h2>
         <code is="akyral-code">
@@ -1251,6 +1276,7 @@ Polymer({
 &lt;/dom-module&gt;          
         </code>
       </super-slide>
+      
       
       <!-- LIVE CODING ----------------------------------------------------------> 
       <!--<super-slide>
