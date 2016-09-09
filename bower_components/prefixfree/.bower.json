@@ -27,7 +27,7 @@
     "branch": "master",
     "commit": "91790e8aff6d807cd62018479db2307e1972b92a"
   },
-  "_source": "git://github.com/tsarnow/prefixfree.git",
+  "_source": "https://github.com/tsarnow/prefixfree.git",
   "_target": "*",
   "_originalSource": "prefixfree"
 }

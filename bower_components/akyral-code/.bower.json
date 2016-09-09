@@ -43,7 +43,7 @@
     "tag": "2.0.2",
     "commit": "ab4da3681bb45926c5d653910bf1440fc16cb19a"
   },
-  "_source": "git://github.com/filaraujo/akyral-code.git",
+  "_source": "https://github.com/filaraujo/akyral-code.git",
   "_target": "~2.0.2",
   "_originalSource": "akyral-code"
 }
