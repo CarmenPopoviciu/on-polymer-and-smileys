@@ -4,4 +4,4 @@ The presentation slides of my talk about Polymer and how to build a set of emoti
 
 # Live slides
 
-You can view the slides [here]()
+You can view the slides [here](http://carmenpopoviciu.github.io/on-polymer-and-smileys/)
